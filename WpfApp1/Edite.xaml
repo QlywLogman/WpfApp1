@@ -1,0 +1,36 @@
+﻿<Window x:Class="WpfApp1.Edite"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Edite" Height="250" Width="250">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" ></RowDefinition>
+            <RowDefinition Height="30" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="30" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="50" ></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="1" Grid.Column="0" Content=" Color : " Width="180" Height="28" 
+                 FontSize="18" FontFamily="Times New Roman"></Label>
+
+        <TextBox Grid.Row="2" Grid.Column="1" FontFamily="Times New Roman" 
+                     Width="180" Height="30" FontSize="20"></TextBox>
+
+        <Label Grid.Row="3" Grid.Column="0" Content=" Color Name : " Width="180" Height="28" 
+                 FontSize="18" FontFamily="Times New Roman"></Label>
+
+        <TextBox Grid.Row="4" Grid.Column="1" FontFamily="Times New Roman" 
+                     Width="180" Height="30" FontSize="20"></TextBox>
+
+        <Button Grid.Row="5" Grid.Column="0" FontFamily="Times New Roman"
+                    Content="Create" Width="120" Height="30" 
+                    FontSize="25" Background="White"></Button>
+
+    </Grid>
+</Window>
